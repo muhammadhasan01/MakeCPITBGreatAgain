@@ -1,6 +1,6 @@
-### Solusi Penyebaran Corona (Version 1) - Muhammad Hasan
+### Solusi Penyebaran Corona (Version 1) oleh Muhammad Hasan
 
-Soal ini cukup standar, kita hanya perlu melakukan dfs atau bfs dimulai dari **root** (pada kasus ini **root** = 1), lalu pada *traversal* tersebut kita catat jarak *root* ke node. Kodenya adalah sebagai berikut
+Soal ini cukup standar, kita hanya perlu melakukan dfs atau bfs dimulai dari **root** (pada kasus ini **root** = 1), lalu pada *traversal* tersebut kita catat jarak *root* ke node. Kodenya adalah sebagai berikut:
 
 ``` C++
 /**
@@ -46,3 +46,5 @@ int main() {
   return 0;
 }
 ```
+
+**Catatan**: Implementasi DFS tersebut baiknya tidak digunakan selain graf yang berbentuk *tree*

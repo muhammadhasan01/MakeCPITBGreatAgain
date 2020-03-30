@@ -30,4 +30,4 @@ It is recommended to follow this guide on how to contribute.
 3. Each tutorial file is recommended to have the following header.
 
 
-        Solution <Problem Name> - <Author>
+        Solution <Problem Name> oleh <Author>
