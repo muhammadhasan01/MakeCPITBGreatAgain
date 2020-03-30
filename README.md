@@ -24,6 +24,6 @@ It is recommended to follow this guide on how to contribute.
 
         /**
          * Author  : <Author>
-         * Problem : <Problem Code> - <Problem Name>
+         * Problem : <Problem Name>
          */
 

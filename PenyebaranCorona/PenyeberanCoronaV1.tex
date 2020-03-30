@@ -37,7 +37,7 @@
 \begin{document}
 
 \begin{center}
-    \section*{A. Judul Problem} % ganti judul soal
+    \section*{Penyebaran Corona (Version 1)} % ganti judul soal
 
     \begin{tabular}{ | c c | }
         \hline
@@ -49,58 +49,47 @@
 
 \subsection*{Deskripsi}
 
-Contoh memformat teks: \textbf{bold}, \textit{italic}, \underline{underline}, $x$.
-
-Contoh membuat persamaan:
-
-\[ x_{n+1} = x_{n} - \frac{f(x_{n})}{f'(x_{n})} \]
-
-\begin{enumerate}
-    \setlength\itemsep{0pt}
-    \item Contoh penomoran.
-    \item Contoh penomoran.
-\end{enumerate}
-
-\begin{itemize}
-    \setlength\itemsep{0pt}
-    \item Contoh membuat poin-poin.
-    \item Contoh membuat poin-poin.
-\end{itemize}
-
-\begin{center}
-    Teks rata tengah
-    % Contoh gambar:
-    % \includegraphics[width=300px]{image-1}
-\end{center}
+Di suatu perumahan, virus berbahaya \textit{corona} telah masuk ke salah satu kota. Diketahui bahwa di perumahan tersebut terdapat $n$ rumah yang setiap rumah dinomori dari $1$ sampai $n$ dan terdapat tepat $n - 1$ jalan antara rumah, sehingga bisa dibilang perumahan ini seperti sebuah \textit{tree} pada suatu graf. Setelah dilakukan penelitian, ternyata virus tersebut berada pada rumah nomor $1$. Anda kemudian penasaran, berapakah jarak antara rumah nomor 1 dengan rumah yang lain! Sehingga setiap perumahan dapat waspada akan virus ini!
 
 \subsection*{Format Masukan}
 
-Baris pertama terdiri dari satu bilangan bulat positif $T$ ($1 \leq T \leq 100.000$), menyatakan banyaknya kasus uji.
-Tiap kasus uji diawali dengan bilangan $N$ ($1 \leq N \leq 100.000$).
-$N$ baris berikutnya terdiri dari 3 bilangan, dengan baris ke-$i$ menyatakan bilangan $A_i$, $B_i$, dan $C_i$.
+Baris pertama terdiri dari satu bilangan bulat positif $n$ ($2 \leq n \leq 100000$), menyatakan banyaknya perumahan yang ada.
+
+$n-1$ baris berikutnya terdiri dari 2 bilangan $u, v$ ($1 \leq u, v \leq n$) yang artinya ada jalan dari kota nomor $u$ ke kota nomor $v$
 
 \subsection*{Format Keluaran}
 
-Untuk tiap kasus uji, tuliskan $N$ baris, dengan baris ke-$i$ menyatakn jumlah $A_i + B_i + C_i$.
-\\
+Keluarkan $n - 1$ baris, dengan setiap baris-$i$ menyatakan jarak nomor $i + 1$ ke rumah nomor $1$
 
 \begin{multicols}{2}
 \subsection*{Contoh Masukan}
 \begin{lstlisting}
-3
-1 2 3
+7
+1 7
+1 2
+1 3
+3 5
+3 4
+5 6
 \end{lstlisting}
 \columnbreak
 \subsection*{Contoh Keluaran}
 \begin{lstlisting}
--6
+1
+1
+2
+2
+3
+1
 \end{lstlisting}
 \vfill
 \null
 \end{multicols}
-
-% \subsection*{Penjelasan}
-% Jika dibutuhkan, tambahkan penjelasan di sini
+\subsection*{Penjelasan}
+\begin{center}
+\includegraphics[scale=0.6]{graf}
+\end{center}
+Dari ilustrasi perumahan tersebut bisa didapat bahwa jarak kota-$1$ ke kota-$2$, kota-$3$, kota-$4$, kota-$5$, kota-$6$, kota-$7$ masing-masing secara berurutan adalah 1, 1, 2, 2, 3, dan 1.
 
 \pagebreak
 
