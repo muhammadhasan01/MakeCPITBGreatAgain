@@ -27,3 +27,7 @@ It is recommended to follow this guide on how to contribute.
          * Problem : <Problem Name>
          */
 
+3. Each tutorial file is recommended to have the following header.
+
+
+        Solution <Problem Name> - <Author>
