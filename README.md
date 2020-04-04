@@ -12,6 +12,7 @@ It is recommended to follow this guide on how to contribute.
         |   ├── tc                      // Folder test cases
         │   ├── sol.cpp                 // Main Solution
         │   ├── alt-sol.cpp             // Alternative Solutions (could be more than one)
+        |   ├── spec.cpp                // Problem specification build in tcframe
         │   ├── tutorial.md             // Tutorial written in markdown
         |   ├── <problem>.tex           // Problem in LaTeX
         │   └── <problem>.pdf           // Problem in PDF
