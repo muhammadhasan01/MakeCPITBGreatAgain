@@ -1,0 +1,108 @@
+\documentclass{article}
+
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\hypersetup{ colorlinks=true, linkcolor=black, filecolor=magenta, urlcolor=cyan}
+\geometry{ a4paper, total={170mm,257mm}, top=20mm, right=20mm, bottom=20mm, left=20mm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+\renewcommand{\headrulewidth}{0pt}
+\lhead{Competitive Programming - ITB}
+\fancyfoot[CE,CO]{\thepage}
+\lstset{
+    basicstyle=\ttfamily\small,
+    columns=fixed,
+    extendedchars=true,
+    breaklines=true,
+    tabsize=2,
+    prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    frame=none,
+    showtabs=false,
+    showspaces=false,
+    showstringspaces=false,
+    prebreak={},
+    keywordstyle=\color[rgb]{0.627,0.126,0.941},
+    commentstyle=\color[rgb]{0.133,0.545,0.133},
+    stringstyle=\color[rgb]{01,0,0},
+    captionpos=t,
+    escapeinside={(\%}{\%)}
+}
+
+\begin{document}
+
+\begin{center}
+    \section*{Naik Tangga (Version 2)} % ganti judul soal
+
+    \begin{tabular}{ | c c | }
+        \hline
+        Batas Waktu  & 2s \\    % jangan lupa ganti time limit
+        Batas Memori & 512MB \\  % jangan lupa ganti memory limit
+        \hline
+    \end{tabular}
+\end{center}
+
+\subsection*{Deskripsi}
+\vspace{-\baselineskip}
+\begin{center}
+	\textbf{Version 2 dengan Version 1 hanya berbeda batasan}
+\end{center}
+\vspace{-\baselineskip}
+Hojun memiliki rumah yang sangat mewah, sehingga rumah ini sangat megah dan tinggi. Didalam rumah tersebut terdapat $N$ tangga. Hojun biasanya menaiki tangga tersebut dengan dua cara:
+\vspace{-\baselineskip}
+\begin{enumerate}
+    \setlength\itemsep{0pt}
+    \item Naik hanya satu tangga
+    \item Naik langsung dua tangga
+\end{enumerate}
+\vspace{-\baselineskip}
+Hojun sadar ternyata ada banyak cara menaiki tangga tersebut. Hojun-pun memiliki $Q$ pertanyaan, di setiap pertanyaan tersebut Hojun ingin tahu ada berapa banyak cara menaiki tangga ke-$x$ dari $N$ tangga tersebut. Bantulah Hojun menyelesaikan permasalahan ini!
+
+\subsection*{Format Masukan}
+
+Baris pertama terdiri dari dua bilangan $N$ ($1 \leq N \leq 10^{18}$) dan $Q$ ($1 \leq Q \leq 10^5$) menyatakan banyaknya tangga dan banyaknya pertanyaan yang hojun miliki
+
+Baris $Q$ selanjutnya berisi satu bilangan $x$ ($1 \leq x \leq N$) menyatakan pertanyaan mengenai banyaknya cara menaiki tangga ke-$x$ tersebut.
+
+\subsection*{Format Keluaran}
+
+Keluarkan $Q$ baris dengan baris ke-$i$ merupakan jawaban mengenai banyaknya cara menaiki tangga pertanyaan ke-$i$. Karena jawaban ini bisa sangat besar, keluarkan jawaban tersebut dalam modulo $10^9 + 7$
+\\
+
+\begin{multicols}{2}
+\subsection*{Contoh Masukan}
+\begin{lstlisting}
+5 3
+1
+2
+3
+\end{lstlisting}
+\columnbreak
+\subsection*{Contoh Keluaran}
+\begin{lstlisting}
+1
+2
+3
+\end{lstlisting}
+\vfill
+\null
+\end{multicols}
+
+\subsection*{Penjelasan}
+Untuk $x = 3$, kita bisa mendapat tiga kemungkinan yaitu
+\vspace{-\baselineskip}
+\begin{enumerate}
+    \setlength\itemsep{0pt}
+    \item Naik satu tangga sebanyak tiga kali
+    \item Naik satu tangga kemudian Naik langsung dua tangga
+    \item Naik langsung dua tangga kemudian Naik satu tangga
+\end{enumerate}
+
+\pagebreak
+
+\end{document}

@@ -23,7 +23,7 @@ int main() {
     for (int i = 1; i <= n; i++) {
         int res = 0;
         for (int j = i - 1; j >= 1; j--) {
-            if (M[i] > M[j]) res++;
+            if (M[i] >= M[j]) res++;
         }
         cout << res << (i == n ? '\n' : ' ');
     }

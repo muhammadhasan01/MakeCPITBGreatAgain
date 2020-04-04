@@ -9,8 +9,11 @@ using namespace std;
 const int N = 1e5 + 5;
 
 int n;
-int M[N];
+long long M[N];
 int bit[N];
+
+unordered_map<long long, int> mp;
+set<int> st;
 
 void add(int x) {
     for ( ; x <= n; x += x & -x) bit[x]++;
@@ -31,10 +34,15 @@ int main() {
     cin >> n;
     for (int i = 1; i <= n; i++) {
         cin >> M[i];
+        st.insert(M[i]);
+    }
+    int ord = 0;
+    for (auto e : st) {
+        mp[e] = ++ord;
     }
     for (int i = 1; i <= n; i++) {
-        cout << get(M[i]) << (i == n ? '\n' : ' ');
-        add(M[i]);
+        cout << get(mp[M[i]]) << (i == n ? '\n' : ' ');
+        add(mp[M[i]]);
     }
 
     return 0;

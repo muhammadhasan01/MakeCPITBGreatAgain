@@ -37,7 +37,7 @@
 \begin{document}
 
 \begin{center}
-    \section*{Imba Berbaris (Version 2)} % ganti judul soal
+    \section*{Imba Berbaris (Version 3)} % ganti judul soal
 
     \begin{tabular}{ | c c | }
         \hline
@@ -48,20 +48,13 @@
 \end{center}
 
 \subsection*{Deskripsi}
-\vspace{-\baselineskip}
-\begin{center}
-\textbf{Version 2 dengan Version 1 hanya beda batasan saja}
-\end{center}
-\vspace{-\baselineskip}
-Pada suatu hari yang indah, para mahasiswa ITB sedang banyak yang pergi ke suatu tempat makanan bernama \textbf{Kinsadi}. Pada saat itu, tempat Kinsadi sedang penuh, sehingga ada beberapa mahasiswa yang berbaris menunggu dalam antrian. Seorang ahli \textbf{CP} bernama Mastre sedang duduk dan melihat keramaian tersebut. Terdapat $N$ mahasiswa yang sedang berbaris disana. Kemudian, ternyata Mastre kenal semua $N$ mahasiswa tersebut dan mengenal bahwa mereka \textbf{Imba} semua, namun Mastre sangat teliti dalam menghitung ke-Imbaan setiap orang, sehingga Mastre mengurutkan ke-Imbaan mereka dari 1 sampai $N$, sehingga katakan saja mahasiswa ke-$i$ memiliki urutan imba $M_i$. Lalu karena perbincangan para Imba cukup susah dipahami, seorang mahasiswa tidak dapat memahami perbincangan mahasiswa lain yang lebih Imba. Mastre pun melihat bahwa ada beberapa mahasiswa yang sedang mendengarkan pembicaraan mahasiswa lain dibelakangnya. Kini Mastre ingin mencari tahu untuk setiap Mahasiswa, ada berapa Mahasiswa dibelakagnya yang ia bisa pahami perbincangan-nya. Mastre langsung mencoba membuat program handalnya untuk menjawab hal tersebut. Anda sebagai saingan Mastre tidak mau kalah, sehingga Anda cepat-cepat juga membuat program Anda sendiri.
+Pada suatu hari yang indah, para mahasiswa ITB sedang banyak yang pergi ke suatu tempat makanan bernama \textbf{Kinsadi}. Pada saat itu, tempat Kinsadi sedang penuh, sehingga ada beberapa mahasiswa yang berbaris menunggu dalam antrian. Seorang ahli \textbf{CP} bernama Mastre sedang duduk dan melihat keramaian tersebut. Terdapat $N$ mahasiswa yang sedang berbaris disana. Kemudian, ternyata Mastre kenal semua $N$ mahasiswa tersebut dan mengenal bahwa mereka \textbf{Imba} semua, namun Mastre sangat teliti dalam menghitung ke-Imbaan setiap orang, tetapi kali ini Mastre malas mengurutkan keimbaan mereka, sehingga Mastre hanya menyebut nilai asli keimbaan-nya, sehingga katakan saja mahasiswa ke-$i$ memiliki nilai imba $M_i$. Lalu karena perbincangan para Imba cukup susah dipahami, seorang mahasiswa tidak dapat memahami perbincangan mahasiswa lain yang lebih Imba. Mastre pun melihat bahwa ada beberapa mahasiswa yang sedang mendengarkan pembicaraan mahasiswa lain dibelakangnya. Kini Mastre ingin mencari tahu untuk setiap Mahasiswa, ada berapa Mahasiswa dibelakagnya yang ia bisa pahami perbincangan-nya. Mastre langsung mencoba membuat program handalnya untuk menjawab hal tersebut. Anda sebagai saingan Mastre tidak mau kalah, sehingga Anda cepat-cepat juga membuat program Anda sendiri.
 
 \subsection*{Format Masukan}
 
 Baris pertama terdiri dari satu bilangan bulat positif $N$ ($1 \leq N \leq 100000$) yang menyatakan banyaknya orang Imba yang sedang berbaris
 
-Baris kedua berisi $N$ bilangan $M_1, M_2, ..., M_N$, yakni urutan ke-Imbaan setiap orang
-
-(Barisan tersebut dipastikan merupakan permutasi dari barisan $1, 2, 3, ..., N$)
+Baris kedua berisi $N$ bilangan $M_1, M_2, ..., M_N$, ($1 \leq M_i \leq 10^{12}$) yakni nilai Imba setiap orang.
 
 \subsection*{Format Keluaran}
 
@@ -71,7 +64,7 @@ Keluarkan satu baris berisi $N$ bilangan dengan setiap bilangan ke-$i$ merupakan
 \subsection*{Contoh Masukan}
 \begin{lstlisting}
 10
-5 1 4 2 3 7 6 8 9 10
+6 1 4 2 3 7 6 8 19 19
 \end{lstlisting}
 \columnbreak
 \subsection*{Contoh Keluaran}
