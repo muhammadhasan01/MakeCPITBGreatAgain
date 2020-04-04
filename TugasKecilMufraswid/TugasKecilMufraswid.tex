@@ -1,0 +1,111 @@
+\documentclass{article}
+
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\hypersetup{ colorlinks=true, linkcolor=black, filecolor=magenta, urlcolor=cyan}
+\geometry{ a4paper, total={170mm,257mm}, top=20mm, right=20mm, bottom=20mm, left=20mm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+\renewcommand{\headrulewidth}{0pt}
+\lhead{Competitive Programming - ITB}
+\fancyfoot[CE,CO]{\thepage}
+\lstset{
+    basicstyle=\ttfamily\small,
+    columns=fixed,
+    extendedchars=true,
+    breaklines=true,
+    tabsize=2,
+    prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    frame=none,
+    showtabs=false,
+    showspaces=false,
+    showstringspaces=false,
+    prebreak={},
+    keywordstyle=\color[rgb]{0.627,0.126,0.941},
+    commentstyle=\color[rgb]{0.133,0.545,0.133},
+    stringstyle=\color[rgb]{01,0,0},
+    captionpos=t,
+    escapeinside={(\%}{\%)}
+}
+
+\begin{document}
+
+\begin{center}
+    \section*{Tugas Kecil Mufraswid} % ganti judul soal
+
+    \begin{tabular}{ | c c | }
+        \hline
+        Batas Waktu  & 1s \\    % jangan lupa ganti time limit
+        Batas Memori & 512MB \\  % jangan lupa ganti memory limit
+        \hline
+    \end{tabular}
+\end{center}
+
+\subsection*{Deskripsi}
+
+Pada suatu hari, seorang dosen Informatika memberikan sebuah tugas kecil kepada mahasiswanya. Sebenarnya tugasnya mudah, diberikan sebuah array dengan panjang $n$, tentukan subarray (yang terdiri dari minimal 1 buah elemen) dengan jumlah nilai terbesar.
+\par
+Mufraswid langsung mengeluarkan laptopnya dan mengetik kode dengan cepat. Akan tetapi, programnya malah mengeluarkan verdict TLE (Time Limit Exceeded). Mufraswid pun kebingungan. Oleh karena itu, ia ingin meminta bantuanmu untuk mengerjakan tugas ini.
+\par
+Subarray adalah bagian dari sebuah array yang kontigu. Sebagai contoh, array [2,4,5] dan [5] adalah subarray dari array [1,2,4,5], sedangkan [1,5] dan [4,4] bukan merupakan subarray.
+
+\subsection*{Format Masukan}
+
+Baris pertama terdiri dari sebuah bilangan bulat positif $n$, yang merupakan banyaknya bilangan yang tersedia.
+\par
+Baris kedua terdiri dari $n$ buah bilangan.
+
+\subsection*{Format Keluaran}
+
+1 buah bilangan, yaitu nilai terbesar yang mungkin didapat dari suatu subarray.
+
+\subsection*{Batasan}
+
+\begin{itemize}
+    \setlength\itemsep{0pt}
+    \item $1 \leq n \leq 10^5$
+    \item $-10^9 \leq $ setiap elemen $n \leq 10^9$
+\end{itemize}
+\\
+\begin{multicols}{2}
+\subsection*{Contoh Masukan}
+\begin{lstlisting}
+4
+2 5 4 2
+\end{lstlisting}
+\columnbreak
+\subsection*{Contoh Keluaran}
+\begin{lstlisting}
+13
+\end{lstlisting}
+\vfill
+\null
+\end{multicols}
+
+\begin{multicols}{2}
+\subsection*{Contoh Masukan}
+\begin{lstlisting}
+5
+-5 2 3 -2 4
+\end{lstlisting}
+\columnbreak
+\subsection*{Contoh Keluaran}
+\begin{lstlisting}
+7
+\end{lstlisting}
+\vfill
+\null
+\end{multicols}
+\subsection*{Penjelasan}
+Pada contoh pertama, subarray yang diambil adalah [2,5,4,2] dan nilainya adalah $2+5+4+2 = 13$.
+Pada contoh kedua, subarray yang diambil adalah [2,3,-2,4] dan nilainya adalah $2+3-2+4 = 7$.
+
+\pagebreak
+
+\end{document}
