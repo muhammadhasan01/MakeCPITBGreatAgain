@@ -1,0 +1,90 @@
+\documentclass{article}
+
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\hypersetup{ colorlinks=true, linkcolor=black, filecolor=magenta, urlcolor=cyan}
+\geometry{ a4paper, total={170mm,257mm}, top=20mm, right=20mm, bottom=20mm, left=20mm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+\renewcommand{\headrulewidth}{0pt}
+\lhead{Competitive Programming - ITB}
+\fancyfoot[CE,CO]{\thepage}
+\lstset{
+    basicstyle=\ttfamily\small,
+    columns=fixed,
+    extendedchars=true,
+    breaklines=true,
+    tabsize=2,
+    prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    frame=none,
+    showtabs=false,
+    showspaces=false,
+    showstringspaces=false,
+    prebreak={},
+    keywordstyle=\color[rgb]{0.627,0.126,0.941},
+    commentstyle=\color[rgb]{0.133,0.545,0.133},
+    stringstyle=\color[rgb]{01,0,0},
+    captionpos=t,
+    escapeinside={(\%}{\%)}
+}
+
+\begin{document}
+
+\begin{center}
+    \section*{Imba Berbaris (Version 2)} % ganti judul soal
+
+    \begin{tabular}{ | c c | }
+        \hline
+        Batas Waktu  & 2s \\    % jangan lupa ganti time limit
+        Batas Memori & 512MB \\  % jangan lupa ganti memory limit
+        \hline
+    \end{tabular}
+\end{center}
+
+\subsection*{Deskripsi}
+\vspace{-\baselineskip}
+\begin{center}
+\textbf{Version 2 dengan Version 1 hanya beda batasan saja}
+\end{center}
+\vspace{-\baselineskip}
+Pada suatu hari yang indah, para mahasiswa ITB sedang banyak yang pergi ke suatu tempat makanan bernama \textbf{Kinsadi}. Pada saat itu, tempat Kinsadi sedang penuh, sehingga ada beberapa mahasiswa yang berbaris menunggu dalam antrian. Seorang ahli \textbf{CP} bernama Mastre sedang duduk dan melihat keramaian tersebut. Terdapat $N$ mahasiswa yang sedang berbaris disana. Kemudian, ternyata Mastre kenal semua $N$ mahasiswa tersebut dan mengenal bahwa mereka \textbf{Imba} semua, namun Mastre sangat teliti dalam menghitung ke-Imbaan setiap orang, sehingga Mastre mengurutkan ke-Imbaan mereka dari 1 sampai $N$, sehingga katakan saja mahasiswa ke-$i$ memiliki urutan imba $M_i$. Lalu karena perbincangan para Imba cukup susah dipahami, seorang mahasiswa tidak dapat memahami perbincangan mahasiswa lain yang lebih Imba. Mastre pun melihat bahwa ada beberapa mahasiswa yang sedang mendengarkan pembicaraan mahasiswa lain dibelakangnya. Kini Mastre ingin mencari tahu untuk setiap Mahasiswa, ada berapa Mahasiswa dibelakagnya yang ia bisa pahami perbincangan-nya. Mastre langsung mencoba membuat program handalnya untuk menjawab hal tersebut. Anda sebagai saingan Mastre tidak mau kalah, sehingga Anda cepat-cepat juga membuat program Anda sendiri.
+
+\subsection*{Format Masukan}
+
+Baris pertama terdiri dari satu bilangan bulat positif $N$ ($1 \leq N \leq 100000$) yang menyatakan banyaknya orang Imba yang sedang berbaris
+
+Baris kedua berisi $N$ bilangan $M_1, M_2, ..., M_N$, yakni urutan ke-Imbaan setiap orang
+
+(Barisan tersebut dipastikan merupakan permutasi dari barisan $1, 2, 3, ..., N$)
+
+\subsection*{Format Keluaran}
+
+Keluarkan satu baris berisi $N$ bilangan dengan setiap bilangan ke-$i$ merupakan jawaban dari banyaknya $M_j < M_i$ dengan $j < i$.
+
+\begin{multicols}{2}
+\subsection*{Contoh Masukan}
+\begin{lstlisting}
+10
+5 1 4 2 3 7 6 8 9 10
+\end{lstlisting}
+\columnbreak
+\subsection*{Contoh Keluaran}
+\begin{lstlisting}
+0 0 1 1 2 5 5 7 8 9
+\end{lstlisting}
+\vfill
+\null
+\end{multicols}
+
+% \subsection*{Penjelasan}
+% Jika dibutuhkan, tambahkan penjelasan di sini
+
+\pagebreak
+
+\end{document}
