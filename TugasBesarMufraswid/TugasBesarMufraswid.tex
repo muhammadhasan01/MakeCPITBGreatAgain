@@ -1,0 +1,120 @@
+\documentclass{article}
+
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\hypersetup{ colorlinks=true, linkcolor=black, filecolor=magenta, urlcolor=cyan}
+\geometry{ a4paper, total={170mm,257mm}, top=20mm, right=20mm, bottom=20mm, left=20mm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+\renewcommand{\headrulewidth}{0pt}
+\lhead{Competitive Programming - ITB}
+\fancyfoot[CE,CO]{\thepage}
+\lstset{
+    basicstyle=\ttfamily\small,
+    columns=fixed,
+    extendedchars=true,
+    breaklines=true,
+    tabsize=2,
+    prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    frame=none,
+    showtabs=false,
+    showspaces=false,
+    showstringspaces=false,
+    prebreak={},
+    keywordstyle=\color[rgb]{0.627,0.126,0.941},
+    commentstyle=\color[rgb]{0.133,0.545,0.133},
+    stringstyle=\color[rgb]{01,0,0},
+    captionpos=t,
+    escapeinside={(\%}{\%)}
+}
+
+\begin{document}
+
+\begin{center}
+    \section*{Tugas Kecil Mufraswid} % ganti judul soal
+
+    \begin{tabular}{ | c c | }
+        \hline
+        Batas Waktu  & 1s \\    % jangan lupa ganti time limit
+        Batas Memori & 512MB \\  % jangan lupa ganti memory limit
+        \hline
+    \end{tabular}
+\end{center}
+
+\subsection*{Deskripsi}
+
+Setelah "mengerjakan" tugas kecilnya, tiba - tiba muncul notifikasi email dari seorang asisten: "[IFXXXX] TUGAS BESAR 1". Mufraswid panik. Ada 10 tugas besar lainnya yang belum ia selesaikan. Ia pun pergi ke C*kapundung untuk mencari bantuan. Kamu, sebagai seorang mahasiswa yang sedang magang di C*kapundung pun diminta untuk mengerjakan tugasnya.
+\par
+Kamu diberikan sebuah array yang berukuran $r$ $x$ $c$. Kamu diminta untuk mencari nilai terbesar dari suatu subrectangle (yang tentunya tidak boleh kosong). Nilai dari subrectangle adalah jumlah dari setiap elemennya.
+\par
+Subrectangle adalah bagian dari sebuah array 2 dimensi yang membentuk suatu persegi/persegi panjang. Untuk lebih jelasnya, lihat contoh dibawah.
+
+\subsection*{Format Masukan}
+
+Baris pertama terdiri dari 2 buah bilangan bulat positif $r$ dan $c$, yaitu banyaknya baris dan kolom.
+\par
+$r$ baris berikutnya terdiri dari $c$ buah bilangan, yaitu elemen array.
+
+\subsection*{Format Keluaran}
+
+1 buah bilangan, yaitu nilai terbesar yang mungkin didapat dari suatu subrectangle.
+
+\subsection*{Batasan}
+
+\begin{itemize}
+    \setlength\itemsep{0pt}
+    \item $1 \leq n \leq 100$
+    \item $-10^9 \leq $ setiap elemen $n \leq 10^9$
+\end{itemize}
+\\
+\begin{multicols}{2}
+\subsection*{Contoh Masukan}
+\begin{lstlisting}
+3 2
+1 3
+-4 6
+2 -3
+\end{lstlisting}
+\columnbreak
+\subsection*{Contoh Keluaran}
+\begin{lstlisting}
+9
+\end{lstlisting}
+\vfill
+\null
+\end{multicols}
+
+\begin{multicols}{2}
+\subsection*{Contoh Masukan}
+\begin{lstlisting}
+1 5
+-5 2 3 -2 4
+\end{lstlisting}
+\columnbreak
+\subsection*{Contoh Keluaran}
+\begin{lstlisting}
+7
+\end{lstlisting}
+\vfill
+\null
+\end{multicols}
+\subsection*{Penjelasan}
+Pada contoh pertama:
+\newline
+1 \textbf{3}
+\newline
+-4 \textbf{6}
+\newline
+2 -3
+\newline
+Nilainya adalah $3+6 = 9$.
+
+\pagebreak
+
+\end{document}
