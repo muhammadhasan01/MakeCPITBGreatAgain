@@ -49,7 +49,7 @@
 
 \subsection*{Deskripsi}
 
-Pada suatu hari, seorang dosen Informatika memberikan sebuah tugas kecil kepada mahasiswanya. Sebenarnya tugasnya mudah, diberikan sebuah array dengan panjang $n$, tentukan subarray (yang terdiri dari minimal 1 buah elemen) dengan jumlah nilai terbesar.
+Pada suatu hari, seorang dosen Informatika memberikan sebuah tugas kecil kepada mahasiswanya. Sebenarnya tugasnya mudah, diberikan sebuah array dengan panjang $N$ yang terdiri dari bilangan bulat $a_1, a_2, ..., a_N$, tentukan subarray (yang terdiri dari minimal 1 buah elemen) dengan jumlah nilai terbesar.
 \par
 Mufraswid langsung mengeluarkan laptopnya dan mengetik kode dengan cepat. Akan tetapi, programnya malah mengeluarkan verdict TLE (Time Limit Exceeded). Mufraswid pun kebingungan. Oleh karena itu, ia ingin meminta bantuanmu untuk mengerjakan tugas ini.
 \par
@@ -57,9 +57,9 @@ Subarray adalah bagian dari sebuah array yang kontigu. Sebagai contoh, array [2,
 
 \subsection*{Format Masukan}
 
-Baris pertama terdiri dari sebuah bilangan bulat positif $n$, yang merupakan banyaknya bilangan yang tersedia.
+Baris pertama terdiri dari sebuah bilangan bulat positif $N$, yang merupakan banyaknya bilangan yang tersedia.
 \par
-Baris kedua terdiri dari $n$ buah bilangan.
+Baris kedua terdiri dari $N$ buah bilangan $a_1, a_2, ..., a_N$.
 
 \subsection*{Format Keluaran}
 
@@ -69,10 +69,10 @@ Baris kedua terdiri dari $n$ buah bilangan.
 
 \begin{itemize}
     \setlength\itemsep{0pt}
-    \item $1 \leq n \leq 10^5$
-    \item $-10^9 \leq $ setiap elemen $n \leq 10^9$
+    \item $1 \leq N \leq 10^5$
+    \item $-10^9 \leq a_i \leq 10^9$ ($1 \leq i \leq N$)
 \end{itemize}
-\\
+
 \begin{multicols}{2}
 \subsection*{Contoh Masukan}
 \begin{lstlisting}
