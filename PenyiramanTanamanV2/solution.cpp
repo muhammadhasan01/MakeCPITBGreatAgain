@@ -9,11 +9,11 @@ using namespace std;
 const int N = 1e5 + 5;
 
 struct st {
-    int maks, sum;
+    long long maks, sum;
 };
 
 int n, q;
-int T[N];
+long long T[N];
 st segtree[4 * N];
 
 st merge(st a, st b) {

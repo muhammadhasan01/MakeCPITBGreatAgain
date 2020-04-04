@@ -15,7 +15,7 @@ long long n;
 int q;
 
 matrix identitas = {{1, 0}, {0, 1}};
-matrix m = {{1, 1}, {1, 0}};
+matrix m = {{0, 1}, {1, 1}};
 
 matrix multiply(matrix& x, matrix& y) {
     matrix ret(sz, vector<long long>(sz, 0));
@@ -43,8 +43,8 @@ matrix matrixpow(matrix x, long long y) {
 }
 
 long long Fibbonaci(int x) {
-    // (Fx     ) = (1 1)^x  (F_0)
-    // (F(x-1) ) = (1 0)    (F_1)
+    // (Fx     ) = (0 1)^x  (F_0)
+    // (F(x+1) ) = (1 1)    (F_1)
     matrix get = matrixpow(m, x);
     long long F_0 = 1, F_1 = 1;
     return (get[0][0] * F_0 + get[0][1] * F_1) % M;
