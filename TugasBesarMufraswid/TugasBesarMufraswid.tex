@@ -37,7 +37,7 @@
 \begin{document}
 
 \begin{center}
-    \section*{Tugas Kecil Mufraswid} % ganti judul soal
+    \section*{Tugas Besar Mufraswid} % ganti judul soal
 
     \begin{tabular}{ | c c | }
         \hline
@@ -51,15 +51,15 @@
 
 Setelah "mengerjakan" tugas kecilnya, tiba - tiba muncul notifikasi email dari seorang asisten: "[IFXXXX] TUGAS BESAR 1". Mufraswid panik. Ada 10 tugas besar lainnya yang belum ia selesaikan. Ia pun pergi ke C*kapundung untuk mencari bantuan. Kamu, sebagai seorang mahasiswa yang sedang magang di C*kapundung pun diminta untuk mengerjakan tugasnya.
 \par
-Kamu diberikan sebuah array yang berukuran $r$ $x$ $c$. Kamu diminta untuk mencari nilai terbesar dari suatu subrectangle (yang tentunya tidak boleh kosong). Nilai dari subrectangle adalah jumlah dari setiap elemennya.
+Kamu diberikan sebuah array yang berukuran $R \times C$. Kamu diminta untuk mencari nilai terbesar dari suatu subrectangle (yang tentunya tidak boleh kosong). Nilai dari subrectangle adalah jumlah dari setiap elemennya.
 \par
 Subrectangle adalah bagian dari sebuah array 2 dimensi yang membentuk suatu persegi/persegi panjang. Untuk lebih jelasnya, lihat contoh dibawah.
 
 \subsection*{Format Masukan}
 
-Baris pertama terdiri dari 2 buah bilangan bulat positif $r$ dan $c$, yaitu banyaknya baris dan kolom.
+Baris pertama terdiri dari 2 buah bilangan bulat positif $R$ dan $C$, yaitu banyaknya baris dan kolom.
 \par
-$r$ baris berikutnya terdiri dari $c$ buah bilangan, yaitu elemen array.
+$R$ baris berikutnya terdiri dari $C$ buah bilangan, $A_{ij}$, yaitu elemen array.
 
 \subsection*{Format Keluaran}
 
@@ -69,10 +69,9 @@ $r$ baris berikutnya terdiri dari $c$ buah bilangan, yaitu elemen array.
 
 \begin{itemize}
     \setlength\itemsep{0pt}
-    \item $1 \leq n \leq 100$
-    \item $-10^9 \leq $ setiap elemen $n \leq 10^9$
+    \item $1 \leq R, C \leq 100$
+    \item $-10^9 \leq A_{ij} \leq 10^9$ ($1 \leq i \leq R, 1 \leq j \leq C$)
 \end{itemize}
-\\
 \begin{multicols}{2}
 \subsection*{Contoh Masukan}
 \begin{lstlisting}
