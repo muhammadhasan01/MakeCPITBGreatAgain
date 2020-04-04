@@ -49,13 +49,13 @@
 
 \subsection*{Deskripsi}
 
-Di suatu perumahan, virus berbahaya \textit{corona} telah masuk ke salah satu kota. Diketahui bahwa di perumahan tersebut terdapat $n$ rumah yang setiap rumah dinomori dari $1$ sampai $n$ dan terdapat tepat $n - 1$ jalan antara rumah, sehingga bisa dibilang perumahan ini seperti sebuah \textit{tree} pada suatu graf. Namun, sayang sekali Anda tidak tahu pada rumah mana virus \textit{corona} terkena, sehingga Anda penasaran seandainya virus tersebut ada pada kota nomor-$i$ maka jaraknya ke kota nomor-$j$ adalah berapa ?
+Di suatu perumahan, virus berbahaya \textit{corona} telah masuk ke salah satu rumah. Diketahui bahwa di perumahan tersebut terdapat $N$ rumah yang setiap rumah dinomori dari $1$ sampai $N$ dan terdapat tepat $N - 1$ jalan antara rumah, sehingga bisa dibilang perumahan ini seperti sebuah \textit{tree} pada suatu graf. Namun, sayang sekali Anda tidak tahu pada rumah mana virus \textit{corona} terkena, sehingga Anda penasaran seandainya virus tersebut ada pada rumah nomor-$i$ maka jaraknya ke rumah lain bernomor-$j$ adalah berapa ?
 
 \subsection*{Format Masukan}
 
-Baris pertama terdiri dari satu bilangan bulat positif $N, Q$ ($2 \leq N, Q \leq 100000$), menyatakan banyaknya perumahan yang ada dan banyaknya pertanyaan yang Anda miliki.
+Baris pertama terdiri dari satu bilangan bulat positif $N, Q$ ($2 \leq N, Q \leq 100000$), menyatakan banyaknya rumah yang ada dan banyaknya pertanyaan yang Anda miliki.
 
-$N-1$ baris berikutnya terdiri dari 2 bilangan $u, v$ ($1 \leq u, v \leq n$ dan $u \neq v$) yang artinya ada jalan dari kota nomor $u$ ke kota nomor $v$
+$N-1$ baris berikutnya terdiri dari 2 bilangan $u, v$ ($1 \leq u, v \leq n$ dan $u \neq v$) yang artinya ada jalan dari rumah nomor $u$ ke rumah nomor $v$
 
 $Q$ baris berikutnya terdiri dari 2 bilangan $u, v$ ($1 \leq u, v \leq n$ dan $u \neq v$) yang artinya jika seandainya ada virus di kota-$u$ maka berapakah jaraknya ke kota-$v$
 
@@ -100,11 +100,11 @@ Ilustrasi perumahan adalah sebagai berikut:
 \end{center}
 Kita akan dapat bahwa:
 \begin{itemize}
-	\item Jarak kota-$1$ ke kota-$4$ adalah $2$
-	\item Jarak kota-$2$ ke kota-$3$ adalah $2$
-	\item Jarak kota-$3$ ke kota-$7$ adalah $2$
-	\item Jarak kota-$5$ ke kota-$6$ adalah $1$
-	\item Jarak kota-$7$ ke kote-$4$ adalah $3$
+	\item Jarak rumah-$1$ ke rumah-$4$ adalah $2$
+	\item Jarak rumah-$2$ ke rumah-$3$ adalah $2$
+	\item Jarak rumah-$3$ ke rumah-$7$ adalah $2$
+	\item Jarak rumah-$5$ ke rumah-$6$ adalah $1$
+	\item Jarak rumah-$7$ ke rumah-$4$ adalah $3$
 \end{itemize}
 
 
