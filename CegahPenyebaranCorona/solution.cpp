@@ -41,7 +41,7 @@ int main () {
     for (int i=1;i<=n;i++) cin >> a[i];
     sort (a+1,a+n+1);
     if (k == 1) {
-        cout << (h - a[1] + 1 + MOD)%MOD << endl;
+        cout << a[1]%MOD << endl;
         return 0;
     }
     vector<pair<LL,LL>> groups;
