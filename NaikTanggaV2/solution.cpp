@@ -42,7 +42,7 @@ matrix matrixpow(matrix x, long long y) {
     return ret;
 }
 
-long long Fibbonaci(int x) {
+long long Fibbonaci(long long x) {
     // (Fx     ) = (0 1)^x  (F_0)
     // (F(x+1) ) = (1 1)    (F_1)
     matrix get = matrixpow(m, x);
