@@ -1,0 +1,111 @@
+\documentclass{article}
+
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\hypersetup{ colorlinks=true, linkcolor=black, filecolor=magenta, urlcolor=cyan}
+\geometry{ a4paper, total={170mm,257mm}, top=20mm, right=20mm, bottom=20mm, left=20mm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+\renewcommand{\headrulewidth}{0pt}
+\lhead{Competitive Programming - ITB}
+\fancyfoot[CE,CO]{\thepage}
+\lstset{
+    basicstyle=\ttfamily\small,
+    columns=fixed,
+    extendedchars=true,
+    breaklines=true,
+    tabsize=2,
+    prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    frame=none,
+    showtabs=false,
+    showspaces=false,
+    showstringspaces=false,
+    prebreak={},
+    keywordstyle=\color[rgb]{0.627,0.126,0.941},
+    commentstyle=\color[rgb]{0.133,0.545,0.133},
+    stringstyle=\color[rgb]{01,0,0},
+    captionpos=t,
+    escapeinside={(\%}{\%)}
+}
+
+\begin{document}
+
+\begin{center}
+    \section*{Penyiraman Tanaman (Version 2)} % ganti judul soal
+
+    \begin{tabular}{ | c c | }
+        \hline
+        Batas Waktu  & 1s \\    % jangan lupa ganti time limit
+        Batas Memori & 512MB \\  % jangan lupa ganti memory limit
+        \hline
+    \end{tabular}
+\end{center}
+
+\subsection*{Deskripsi}
+\vspace{-\baselineskip}
+\begin{center}
+\textbf{Version 2 dengan Version 1 hanya beda batasan saja}
+\end{center}
+\vspace{-\baselineskip}
+Disaat kita disuruh \#DirumahSaja, Mufraswid kini menjadi giat menyiram tanaman yang ada di halaman rumahnya. Terdapat $N$ tanaman yang dia miliki, pada awalnya tanaman ke-$i$ ($1 \leq i \leq N$) memiliki tingkat kesegaran tanaman sebesar $T_i$. Setiap kali Mufraswid menyirami suatu tanaman, maka kesegaran-nya akan bertambah satu. Mufraswid melakukan penyiraman kepada tepat satu tanaman, dan pada saat itu, terkadang dia suka menanyakan kepada dirinya, untuk suatu rentang $\left[L, R \right]$ ($1 \leq L \leq R \leq N$) berapa maksimal kesegaran tanaman dan jumlah kesegaran tanaman dari rentang tersebut. Kebetulan Mufraswid meminta Anda membuat program untuk menjawab pertanyaan rentang tersebut! Bantulah Mufraswid ini!
+
+\subsection*{Format Masukan}
+
+Baris pertama terdiri dari satu bilangan bulat positif $N$ ($1 \leq N \leq 100000$).
+
+Baris selanjutnya berisi $N$ bilangan bulat $T_1, T_2, ..., T_N$ ($0 \leq T_i \leq 100000$) yang menyatakan kesegaran setiap tanaman pada awalnya.
+
+Baris selanjutnya terdiri dari satu bilangan bulat positif $Q$ ($1 \leq Q \leq 100000$) yang menyatakan banyaknya kegiatan Mufraswid saat menyiram tanaman-nya.
+
+Kemudian $Q$ baris selanjutnya berisi salah satu dari dua kemungkinan kegiatan:
+\vspace{-\baselineskip}
+\begin{itemize}
+    \setlength\itemsep{0pt}
+	\item 1 $i$ (Siram tanaman ke-$i$, $1 \leq i \leq N$)
+	\item 2 $L$ $R$ (Pertanyaan mengenai maksimal dan jumlah kesegaran tanaman dari $L$ sampai $R$, $1 \leq L \leq R \leq N$)
+\end{itemize}
+\vspace{-\baselineskip}
+(Dipastikan terdapat minimal satu buah pertanyaan dari $Q$ kegiatan tersebut)
+
+\subsection*{Format Keluaran}
+
+Untuk setiap pertanyaan, keluarkan jawaban dalam satu baris berisi dua bilangan yang merupakan maksimal kesegaran tanaman dan jumlah kesegaran tanaman pada rentang yang bersangkutan.
+
+\begin{multicols}{2}
+\subsection*{Contoh Masukan}
+\begin{lstlisting}
+5
+1 3 5 0 1
+6
+2 1 4
+1 3
+2 1 4
+2 2 4
+1 5
+2 4 5
+\end{lstlisting}
+\columnbreak
+\subsection*{Contoh Keluaran}
+\begin{lstlisting}
+5 9
+6 10
+6 9
+2 2
+
+\end{lstlisting}
+\vfill
+\null
+\end{multicols}
+
+% \subsection*{Penjelasan}
+% Jika dibutuhkan, tambahkan penjelasan di sini
+
+\pagebreak
+
+\end{document}
